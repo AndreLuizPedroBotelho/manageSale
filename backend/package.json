@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/server.ts",
   "description": "Example Project using typescript and other tools",
-  "author": "André Luiz Pedro Botelho",
+  "author": "André Luiz Pedro Botelho<andrepedrobotelho@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.ts",
