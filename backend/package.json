@@ -1,0 +1,65 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "src/server.ts",
+  "description": "Example Project using typescript and other tools",
+  "author": "André Luiz Pedro Botelho",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "debug": "nodemon --inspect  src/server.ts",
+    "test": "NODE_ENV=test jest",
+    "docs": "typedoc --out docs src  && npx http-server docs/. -p 4060 -a localhost"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.ts": [
+      "eslint --fix",
+      "yarn test --findRelatedTests",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.2",
+    "@types/faker": "^4.1.9",
+    "@types/jest": "^24.9.0",
+    "@types/node": "^13.1.8",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "factory-girl": "^5.0.4",
+    "faker": "^4.1.0",
+    "jest": "^24.9.0",
+    "lint-staged": "^10.0.2",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "sequelize-cli": "^5.5.1",
+    "sqlite3": "^4.1.1",
+    "supertest": "^4.0.2",
+    "ts-jest": "^24.3.0"
+  },
+  "dependencies": {
+    "@types/jsonwebtoken": "^8.3.8",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.3.1",
+    "helmet": "^3.21.2",
+    "husky": "^4.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^7.17.1",
+    "sequelize": "^5.21.3",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "typedoc": "^0.16.9",
+    "typescript": "^3.7.5"
+  }
+}

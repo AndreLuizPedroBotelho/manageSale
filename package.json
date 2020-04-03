@@ -1,0 +1,9 @@
+{
+  "name": "manageSale",
+  "version": "1.0.0",
+  "description": "Project for sale controler ",
+  "main": "index.js",
+  "repository": "https://github.com/AndreLuizPedroBotelho/manageSale.git",
+  "author": "André <andrepedrobotelho@gmail.com>",
+  "license": "MIT"
+}

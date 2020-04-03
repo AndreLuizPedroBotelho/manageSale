@@ -1,0 +1,8 @@
+.env
+node_modules
+src/app/tests/coverage
+database.sqlite
+package-lock.json
+yarn.lock
+docs
+dist
